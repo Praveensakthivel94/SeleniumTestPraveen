@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Allianz">
+	<parameter name="url" value="qa.com"/>	
+  <test thread-count="5" name="Insurance">
+    <classes>
+      <class name="com.testNG.basics.FirstExercise"/>
+      <class name="com.testNG.basics.SecondExercise"/>
+      <class name="com.testNG.basics.FourthExercise"/>
+    </classes>
+</test>
+<test name="Automation">
+    <classes>
+      <class name="com.testNG.basics.ThirdExercise">
+      <methods>
+		<include name="pixel1"/>
+		<exclude name="pixel2"/>
+	  </methods>
+	  </class>
+	  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
