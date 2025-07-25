@@ -1,2 +1,0 @@
-# SeleniumTestPraveen
-Selenium StandAloneFramework
